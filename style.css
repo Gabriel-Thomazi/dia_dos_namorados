@@ -1,0 +1,278 @@
+/* Estilo base com fonte romântica e fundo suave */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF0F5;
+  color: #5C2A3A;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(to right, #FFC0CB, #E91E63);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Corpo principal */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Imagem */
+.imagem_inicial {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.imagem_peixe {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imagem_apt {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 100%;
+  height: 180px; /* altura fixa */
+  object-fit: cover; /* mantém proporção sem deformar */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Título do main */
+main h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #C2185B;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+/* Timer */
+#timer {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #C2185B;
+  margin: 10px 0 30px;
+}
+
+/* Texto */
+main p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #333;
+  background-color: #F8F8F8;
+  padding: 20px;
+  border-left: 5px solid #FFC0CB;
+  border-radius: 10px;
+  margin-bottom: 50 auto;
+}
+
+main ul {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50 auto;
+}
+
+main ol {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50 auto;
+}
+
+.mensagem-erro {
+  display: none;
+  color: #ff4d6d;
+  background-color: #ffe6ea;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.mensagem-secreta{
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50 auto;
+}
+
+.caixa-senha {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.caixa-senha input[type="text"] {
+  padding: 10px 15px;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  background-color: #fff0f5;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.caixa-senha input[type="text"]:focus {
+  border-color: #ff4d6d;
+}
+
+.caixa-senha button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 105, 135, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.caixa-senha button:hover {
+  background-color: #ff2e5a;
+  transform: scale(1.05);
+}
+
+.heart {
+  position: fixed;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+  background-size: contain;
+  animation: fall 5s linear forwards;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #FFC0CB;
+  color: #5C2A3A;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  main {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  main h1 {
+    font-size: 28px;
+  }
+
+  #timer {
+    font-size: 18px;
+  }
+
+  main p {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .imagem_inicial {
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
