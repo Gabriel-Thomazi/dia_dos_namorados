@@ -21,20 +21,6 @@ function updateTimer() {
 setInterval(updateTimer, 1000);
 updateTimer();
 
-function verificarSenha() {
-  const senha = document.getElementById("senha").value.trim();
-  const mensagemSecreta = document.getElementById("mensagem-secreta");
-  const mensagemErro = document.getElementById("mensagem-erro");
-
-  if (senha === "XPTZ-24") {
-    mensagemSecreta.style.display = "block";
-    mensagemErro.style.display = "none";
-  } else {
-    mensagemErro.style.display = "block";
-    mensagemSecreta.style.display = "none";
-  }
-}
-
 function criarCoracao() {
   const coracao = document.createElement("div");
   coracao.classList.add("heart");
